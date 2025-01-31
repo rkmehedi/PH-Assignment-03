@@ -16,6 +16,19 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'nav-black-color': '#111111',
+
+              }
+            }
+          }
+        }
+      </script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,15 +45,63 @@
       }
     </style>
   </head>
-  <body>
-    <header>
+  <body class="sora-font">
+    <header class="container mx-auto md:px-32 xl:px-32 lg:px-36 sm:px-2">
+        <!-- nav mobile -->
+         <nav class=" block md:hidden">
+            <div class="flex border-[#179800]  border px-3 py-4 justify-between">
+                <img src="c2-assets/ms-nav.svg" alt="logo of icon">
+            <img src="c2-assets/bars-3.svg" alt="3 dot menu">
+            </div>
+            
+         </nav>
+        <!-- nav big -->
+        <nav class="mt-6 hidden md:block">
+            <div class="flex justify-between items-center mt-6">
+            <div>
+                <img class="" src="/c2-assets/logo-header.png" alt="Logo vegetable">
+            </div>
+            <div class="flex gap-28">
+            <div class="flex gap-8 items-center justify-center">
+                <h3 class="text-xl font-normal text-nav-black-color ">
+                    Product
+                </h3>
+                <h3 class="text-xl font-normal  text-nav-black-color ">
+                    Services
+                </h3>
+                <h3 class="text-xl font-normal  text-nav-black-color ">
+                    Contact us
+                </h3>
+
+            </div>
+            <div class="flex gap-6 items-center justify-center ">
+                <!-- last logo section div -->
+            <div class="flex gap-6 items-center justify-center">
+                <!-- login-logo -->
+                <img src="c2-assets/Vector.svg" alt="Search button">
+                 <img src="c2-assets/Group.svg" alt="Shopping cart button">               
+
+            </div>
+            
+            <div class="flex gap-3 items-center justify-center " >
+                <!-- login -->
+                <button class=" border-[#179800]  border px-7 py-3 rounded-xl  text-black">Login</button>
+                 <button class="border-spacing-1 px-7 py-3 rounded-xl text-white bg-[#179800]">Register</button>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+        
+           
+        </nav>
 
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
   </body>
 </html>
