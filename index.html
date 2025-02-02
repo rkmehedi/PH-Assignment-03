@@ -54,6 +54,27 @@
 .footer-hight{
   height: 658px;
 }
+@keyframes motion {
+  from{left:0;}
+  to{
+    left: 100%;
+  }
+}
+.main-ground{ 
+        width: calc(100% - 128px);
+        height: auto;
+
+        padding-top: 2px;
+        
+      }
+       .anamition{
+        width: auto;
+        height: auto;
+        border-radius: 50%;
+        
+        position: relative;
+        animation: motion 6s ease-in-out 1s infinite alternate;
+       }
 .debug{
   border: 2px red solid;
 }
@@ -127,6 +148,21 @@
 
            </div>
         </section>
+    </section>
+    <section>
+      <!-- extra-section -->
+       <div class="container mx-auto px-4 md:px-32 xl:px-32 lg:px-36 sm:w-full">
+        
+      <h2 class=" text-left text-base font-semibold lg:text-3xl xl:text-3xl pt-12 pb-8 xl:pt-32 xl:pb-12 lg:pt-32 lg:pb-12 text-[#179800]" >Vegetable animation</h2>
+      <div class=" rounded-xl border-4 border-[#179800]">
+      <div class="main-ground rounded-xl">
+        <div class="anamition">
+          <img class=" w-32 h-32 rounded-full" src="c2-assets/the-organic-crave-ES29lILReC0-unsplash.jpg" alt="">
+          <h2 class="text-[#179800] text-base font-semibold  ">100% Organic!</h2> 
+        </div>
+        </div>
+        </div>
+       </div>
     </section>
     </header>
     <main>
